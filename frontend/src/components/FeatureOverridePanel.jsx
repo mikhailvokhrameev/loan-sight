@@ -104,9 +104,6 @@ const NUMERIC_FIELDS = [
   },
 ];
 
-const INPUT_CLASS =
-  'w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none';
-
 export default function FeatureOverridePanel({ features, onChange, currency = 'RUB' }) {
   const [editedNumeric, setEditedNumeric] = useState({});
   const [editedCategorical, setEditedCategorical] = useState({});
@@ -239,7 +236,7 @@ export default function FeatureOverridePanel({ features, onChange, currency = 'R
               </label>
               <p className="text-xs text-muted">{description}</p>
               <select
-                className={INPUT_CLASS}
+                className="form-input"
                 value={currentVal}
                 onChange={e => handleCategoricalChange(key, e.target.value)}
               >
@@ -275,7 +272,7 @@ export default function FeatureOverridePanel({ features, onChange, currency = 'R
               <p className="text-xs text-muted">{desc}</p>
               <input
                 type="number"
-                className={INPUT_CLASS}
+                className="form-input"
                 value={displayVal}
                 placeholder={displayVal === '' ? 'No data' : undefined}
                 step="any"

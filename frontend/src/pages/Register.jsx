@@ -41,24 +41,24 @@ export default function Register() {
           <div className="flex gap-4 mb-5">
             <div className="flex-1">
               <label className="block text-sm font-medium mb-2 text-main">First Name</label>
-              <input type="text" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none" onChange={e => setFormData({...formData, firstName: e.target.value})} required />
+              <input type="text" className="form-input" onChange={e => setFormData({...formData, firstName: e.target.value})} required />
             </div>
             <div className="flex-1">
               <label className="block text-sm font-medium mb-2 text-main">Last Name</label>
-              <input type="text" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none" onChange={e => setFormData({...formData, lastName: e.target.value})} required />
+              <input type="text" className="form-input" onChange={e => setFormData({...formData, lastName: e.target.value})} required />
             </div>
           </div>
           <div className="mb-5">
             <label className="block text-sm font-medium mb-2 text-main">Email</label>
-            <input type="email" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none" onChange={e => setFormData({...formData, email: e.target.value})} required />
+            <input type="email" className="form-input" onChange={e => setFormData({...formData, email: e.target.value})} required />
           </div>
           <div className="mb-5">
             <label className="block text-sm font-medium mb-2 text-main">Password</label>
-            <input type="password" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none" onChange={e => setFormData({...formData, password: e.target.value})} required />
+            <input type="password" className="form-input" onChange={e => setFormData({...formData, password: e.target.value})} required />
           </div>
           <div className="mb-8">
             <label className="block text-sm font-medium mb-2 text-main">Confirm Password</label>
-            <input type="password" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none" onChange={e => setFormData({...formData, password2: e.target.value})} required />
+            <input type="password" className="form-input" onChange={e => setFormData({...formData, password2: e.target.value})} required />
           </div>
           <button type="submit" disabled={loading} className="w-full py-3 bg-primary text-primary-foreground font-bold rounded-sm hover:bg-primary-hover transition-all">
             {loading ? 'Creating Account...' : 'Register'}

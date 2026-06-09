@@ -56,12 +56,12 @@ export default function Profile() {
 
           <div className="mb-5">
             <label className="block text-sm font-medium mb-2 text-main">First Name</label>
-            <input type="text" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none transition-all" value={firstName} onChange={(e) => setFirstName(e.target.value)} disabled={saving} />
+            <input type="text" className="form-input" value={firstName} onChange={(e) => setFirstName(e.target.value)} disabled={saving} />
           </div>
 
           <div className="mb-8">
             <label className="block text-sm font-medium mb-2 text-main">Last Name</label>
-            <input type="text" className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none transition-all" value={lastName} onChange={(e) => setLastName(e.target.value)} disabled={saving} />
+            <input type="text" className="form-input" value={lastName} onChange={(e) => setLastName(e.target.value)} disabled={saving} />
           </div>
 
           <div className="flex gap-4">

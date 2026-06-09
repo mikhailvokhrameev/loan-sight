@@ -92,7 +92,7 @@ export default function ClientSelector({ onClientSelected }) {
               <input
                 type="number" name="age_min" value={filters.age_min}
                 onChange={handleFilterChange} min="0" max="100"
-                className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none"
+                className="form-input"
               />
             </div>
             <div>
@@ -100,7 +100,7 @@ export default function ClientSelector({ onClientSelected }) {
               <input
                 type="number" name="age_max" value={filters.age_max}
                 onChange={handleFilterChange} min="0" max="100"
-                className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none"
+                className="form-input"
               />
             </div>
             <div>
@@ -108,7 +108,7 @@ export default function ClientSelector({ onClientSelected }) {
               <input
                 type="number" name="income_min" value={filters.income_min}
                 onChange={handleFilterChange} min="0"
-                className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none"
+                className="form-input"
               />
             </div>
             <div>
@@ -116,7 +116,7 @@ export default function ClientSelector({ onClientSelected }) {
               <input
                 type="number" name="income_max" value={filters.income_max}
                 onChange={handleFilterChange} min="0"
-                className="w-full p-[0.625rem] border border-border rounded-sm text-sm bg-bg text-main focus:border-primary focus:outline-none"
+                className="form-input"
               />
             </div>
           </div>
